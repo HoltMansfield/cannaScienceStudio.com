@@ -4,8 +4,9 @@ import {NGB_DIRECTIVES} from '@ng-bootstrap/ng-bootstrap';
 
 import { ApiService } from './shared';
 
+import { HeaderComponent } from './shared/header';
+
 import '../style/app.scss';
-import '../style/test.scss';
 import '../style/bootstrap/scss/bootstrap.scss';
 
 
@@ -14,7 +15,8 @@ import '../style/bootstrap/scss/bootstrap.scss';
   providers: [ApiService],
   directives: [
     ...ROUTER_DIRECTIVES,
-    NGB_DIRECTIVES
+    NGB_DIRECTIVES,
+    HeaderComponent
     ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
